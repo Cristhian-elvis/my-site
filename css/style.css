@@ -49,7 +49,8 @@ a {
 .l-header{
     position: fixed;
     width: 100%;
-    z-index: 1040
+    z-index: 1040;
+    background-color: var(--first-color-lighthen);
 }
 .nav{
     max-width: 1600px;
@@ -79,7 +80,7 @@ a {
 .nav__toggle{
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 2.1rem;
     color: var(--first-color);
 }
 
@@ -105,10 +106,11 @@ a {
     margin-bottom: var(--mb-5);
 }
 .btn__box{
-    font-size: 1.5rem;
+    display: inline-block;
+    font-size: 1.25rem;
     padding: 0.75rem 2.1rem;
-    border-radius: 0.25rem;
-    background-color: var(--second-color);
+    border-radius: 0.50rem;
+    background-color: var(--first-color);
     color: #fff;
 }
 
