@@ -41,6 +41,7 @@ a {
 .l-header{
     position: fixed;
     width: 100%;
+    z-index: 1040
 }
 .nav{
     max-width: 1600px;
@@ -67,12 +68,18 @@ a {
     display: block;
     color: var(--first-color);
 }
+.nav__toggle{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
 
 /*====Hero====**/
 .c-hero{
     overflow: hidden;
     position: relative;
     padding-top: 95px;
+    z-index: 1000;
 }
 .c-hero__box{
     max-width: 90%;
