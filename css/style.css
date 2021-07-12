@@ -13,6 +13,14 @@
     --second-color: #656270;
     --third-color: #4070F4;
     --first-color-lighthen: #fefaf6;
+
+    /*===== Margin =====*/
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
 }
 
 body{
@@ -33,7 +41,7 @@ a{
 a {
     background-color: transparent;
     box-sizing: border-box;
-    color: #3197d6;
+    color: var(--first-color);
     cursor: pointer;
     text-decoration: none;
     transition: none;
@@ -72,6 +80,7 @@ a {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
+    color: var(--first-color);
 }
 
 /*====Hero====**/
@@ -88,14 +97,22 @@ a {
 .c-hero__title{
     color: #232320;
     font-family: Bogart, Helvetica,Arial,sans-serif;
-    font-size: 3.5em;
+    font-size: 3.3em;
     letter-spacing: -1.5px;
     line-height: 110%;
     margin: 0;
     transition: all .2s ease-in-out;
+    margin-bottom: var(--mb-5);
+}
+.btn__box{
+    font-size: 1.5rem;
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.25rem;
+    background-color: var(--second-color);
+    color: #fff;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 640px){
     .nav__menu{
       position: fixed;
       top: var(--header-height);
@@ -106,10 +123,24 @@ a {
       background-color: var(--second-color);
       transition: .5s;
     }
-  }
+    /*.c-hero__title {
+        font-size: 4.5em;
+    }*/
+}
+@media screen and (min-width: 640px){
+    .nav__toggle{
+        display: none;
+    }
+}
 
 @media screen and (min-width: 768px){
     .u-d-block\@md {
         display: block ;
+    }
+}
+
+@media screen and  (min-width: 1000px){
+    .c-hero__title {
+        font-size: 4.5em;
     }
 }
